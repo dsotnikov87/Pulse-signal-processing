@@ -1,0 +1,3 @@
+This code allow to determine optimal number of pulsed signal with linear ramping sections by k-means package. The basic principle for criterion is Silhoutte score. Also, it includes elbow. And the last one option is Gaussian function fitting attached. In case of uniform data, silhoutte score have deviation, and maximal value of silhoutte scores could not corresponds to  real value. In this case it is better to use integer maximal value of Gaussian. For the task this program created, 5 points left and right from maximal silhoutte score for gaussian fitting returned correct value.
+
+Clusterization is done in two step. On the first step, the function determines unique values by magnitude. On the second step, each of gotten unique values determined by time.
